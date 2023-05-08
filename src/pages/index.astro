@@ -10,23 +10,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<meta charset=utf-8><meta content="initial-scale=1,width=device-width,viewport-fit=cover" name=viewport><meta name=color-scheme content="dark light">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<script> document.addEventListener('DOMContentLoaded', () => {
-  const title = `${document.title} — `;
-  position = 0;
-  const scrolltitle = () => {
-      document.title = title.substring(position, title.length) + title.substring(0, position);
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle,170);
-  }
-  scrolltitle();
-			}) </script>
+		
 	</head>
 	<body>
 		
 		<Header title={SITE_TITLE} />
-		<main>
-			
+<main class=layout-wrapper>			
 			<div class="content text"><p>Test test test<br><br></p><ul><li><a href=https://link.com>link</a></li><li><a href=https://www.com.com">test</a></li><li></p><h2>head</h2><p>test</p><ul><li>test<br>test</li></p></div>
 				
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>

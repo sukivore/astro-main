@@ -3,7 +3,7 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class=layout wrapper>
+<header> <div class=layout wrapper>
 	<h2>
 		{SITE_TITLE}
 	</h2>
@@ -13,7 +13,7 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="/about">About</HeaderLink>
 		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
 		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+	</nav></div>
 </header>
 <style>
 	header {

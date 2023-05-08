@@ -11,17 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<script> document.addEventListener('DOMContentLoaded', () => {
-  const title = `${document.title} — `;
-  position = 0;
-  const scrolltitle = () => {
-      document.title = title.substring(position, title.length) + title.substring(0, position);
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle,170);
-  }
-  scrolltitle();
-			}) </script>
+		
 		<Header title={SITE_TITLE} />
 		<main>
 			

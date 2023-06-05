@@ -12,7 +12,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<style>
 				
 body{
-font-size: 16px;
+font-size: 1.8em;
 font-family: Candara, Trebuchet MS, Arial, Sans-serif;
 }
 *{
@@ -29,20 +29,25 @@ padding: 0 auto;
 			
 .content-text {
 margin: 0 auto;
+				position: absolute; 
 padding: 18em; 
+				overflow: auto;
 				}
 
 .cover-photo {
 background-image:url(https://i.pinimg.com/originals/ab/f6/84/abf68440b2a5cb3ca4ae07bc64cd0fda.jpg);
 max-width: 100%;
+		     height: auto;
 background-size:cover;
 		     background-position:50% 50%;
+		     background-repeat: no-repeat;
+		     
 
 }
 </style>
 
 <body>
-<div class="container">
+<main class="container">
 	<div class="cover-photo">
 		<div class="content-text">
 <h1>KAT ✦ YAN</h1>
@@ -68,6 +73,6 @@ these lands, rivers, mountains, and tides since time immemorial. <br><br><li>Rel
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque explicabo quis saepe consequatur quas officiis voluptas excepturi, id et mollitia ipsa eius dignissimos veritatis impedit possimus quo veniam placeat omnis!</p>
 	 </div></div>
-	 </div>
+	 </main>
 	</body>
 </html>

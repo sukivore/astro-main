@@ -47,7 +47,7 @@ margin-right: auto;
 			
 #wrapper {
 display: flex;
-width:69%;
+width: auto;
 max-width: 700px;
 height: auto;
 max-height: 700px;
@@ -63,6 +63,7 @@ background-position:center;
 background-repeat: no-repeat;
 aspect-ratio: 1;
 overflow: auto;
+transform: skew(var(--skew), var(--skew));
 }
 			
 .textbox {
@@ -70,8 +71,6 @@ width: 100%;
 height: 100%;
 background:transparent;
 font-size: 69%;
-overflow: auto;
-transform: skew(var(--skew), var(--skew));
 padding-top: calc(5 * var(--margin));
 padding-bottom: calc(3 * var(--margin));
 padding-left: calc(3 * var(--margin));

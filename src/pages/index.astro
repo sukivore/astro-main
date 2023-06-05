@@ -3,13 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-
 <!DOCTYPE html>
 <html lang="en">
-	<meta charset=utf-8><meta content="initial-scale=1,width=device-width,viewport-fit=cover" name=viewport><meta name=color-scheme content="dark light">
+<meta charset=utf-8><meta content="initial-scale=1,width=device-width,viewport-fit=cover" name=viewport><meta name=color-scheme content="dark light">
 	
-		
-		<style>
+<style>
 				
 :root {
   --margin: 2.4rem;
@@ -25,7 +23,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   --skew--mobile: .75deg;				
 }
 			
-			@media screen and (max-width: 30em) {
+@media screen and (max-width: 30em) {
   :root {
     --font-size--header: var(--font-size--header--mobile);
     --font-size--nav: var(--font-size--nav--mobile);
@@ -35,85 +33,77 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 }
 
 html {
-				height:100%;
-				box-sizing: border-box;
-				}
+height:100%;
+box-sizing: border-box;
+}
 			
 body {				
 font-size: 69%;
 font-family: "Fragment Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 margin-left: auto;
 margin-right: auto;
-			}
+}
 			
 			
 #wrapper {
-				display: flex;
-				justify-content: center;
+display: flex;
+width:69%;
 max-width: 700px;
-				width:69%;
-max-height: auto;
-				position: relative;
-				top: 20%;
-        left: 50%;
-        margin-left: -50%;
-				padding-top: calc(5 * var(--margin));
-  padding-bottom: calc(3 * var(--margin));
-				padding-left: 3 * var(--margin));
-				padding-right: 3 * var(--margin));
+position: absolute;
+top: 20%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)';
 background: #ffffff;
 background-image:url('https://i.pinimg.com/originals/ab/f6/84/abf68440b2a5cb3ca4ae07bc64cd0fda.jpg');
 background-size:100% auto;
-		     background-position:center;
-		     background-repeat: no-repeat;
-		     aspect-ratio: 1;
- 
+background-position:center;
+background-repeat: no-repeat;
+aspect-ratio: 1;
 }
 			
 .textbox {
-				display: flex;
-				width: 80%;
-			max-width:700px;
-				margin-left: auto;
-				margin-right: auto;
-				vertical-align: middle;
-				position: absolute;
-				background:transparent;
-			
-				
-				  font-size: 69%;
-				overflow: auto;
-				transform: skew(var(--skew), var(--skew));
+width: 100%;
+height: 100%;
+background:transparent;
+font-size: 69%;
+overflow: auto;
+transform: skew(var(--skew), var(--skew));
+padding-top: calc(5 * var(--margin));
+padding-bottom: calc(3 * var(--margin));
+padding-left: calc(3 * var(--margin));
+padding-right: calc(3 * var(--margin));
 }
 			
-			h1 {
-  font-family: 'Times New Roman', serif;
-  font-size: var(--font-size--header);
-  line-height: var(--line-height);
-				-webkit-filter:blur(1px);
-			filter: blur(1px);
-				text-align: center; 
+h1 {
+font-family: 'Times New Roman', serif;
+font-size: var(--font-size--header);
+line-height: var(--line-height);
+-webkit-filter:blur(1px);
+filter: blur(1px);
+text-align: center; 
 }
 	
-			ul {
-  list-style: none;
+ul {
+list-style: none;
 }
+
 ul li::before {
-  content: '→';
-  width: 2.5rem;
-  margin-left: -2.5rem;
-  display: inline-block;
+content: '→';
+width: 2.5rem;
+margin-left: -2.5rem;
+display: inline-block;
 }
+
 ul li {
-  margin-left: 2.5rem;
+margin-left: 2.5rem;
 }
-			
 
 </style>
 
 <body>
 	
-		<div id="wrapper">
+<div id="wrapper">
 <div class="textbox"><h1>KAT ✦ YAN</h1>
 <p>
 Researcher, writer, internet explorer. <br><br>
@@ -129,9 +119,8 @@ Researcher, writer, internet explorer. <br><br>
  <ul>
  <li>+61 425 267 688</li><br>Naarm/Melbourne, Australia. <li>Relocating stateside 2024. </li></ul>
 </p>
-			    <p><center><br><br>
+<p><center><br><br>
 I acknowledge the traditional custodians of the unceded lands of the Wurundjeri, Taungurung, and Gunaikurnai peoples on which I live. I pay my respects to their Elders past and present, and to the oldest continuing cultures on this planet that have nurtured these lands, rivers, mountains, and tides since time immemorial. <br><br></center></p>
-				    </div> </div>
-
-	</body>
+</div> </div>
+</body>
 </html>

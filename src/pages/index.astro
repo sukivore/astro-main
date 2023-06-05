@@ -49,7 +49,8 @@ box-sizing: border-box;
 max-width: 13em;
 margin: 20% auto;
 background: #ffffff;
-padding: 0 auto;
+  padding-top: calc(3 * var(--margin));
+  padding-bottom: calc(0.1 * var(--margin));
 }
 
 			h1 {
@@ -75,10 +76,11 @@ ul li {
 			
 .content-text {
 margin: 0 auto;
-				position: absolute; 
-padding: 18em; 
+  padding: calc(0.1 * var(--margin));
+  margin: calc(0.1 * var(--margin));
 				overflow: auto;
 				text-align: center; 
+				transform: skew(var(--skew), var(--skew));
 				}
 
 .cover-photo {

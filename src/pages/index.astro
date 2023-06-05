@@ -38,7 +38,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 body {				
 font-size: 69%;
 font-family: "Fragment Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-}
+position:relative;
+			}
 			
 			
 *{
@@ -48,10 +49,10 @@ box-sizing: border-box;
 .wrapper {
 max-width: 700px;
 max-height: auto;
-				position: fixed;
-left: 50% 50%;
-  top: 50% 50%;
-				
+				position: absolute;
+				top: 50%;
+        left: 50%;
+        margin-right: -50%;
 				padding-top: calc(5 * var(--margin));
   padding-bottom: calc(3 * var(--margin));
 				padding-left: 3 * var(--margin));
@@ -68,10 +69,13 @@ background-size:cover;
 .textbox {
 				width: 80%;
 				height: 80%;
-				background:transparent;
+				margin-left: auto;
+				margin-right: auto;
+				vertical-align: middle;
 				position: absolute;
-				top: 50% 50%;
-				left: 50% 50%;
+				background:transparent;
+			
+				
 				  font-size: 69%;
 				overflow: auto;
 				transform: skew(var(--skew), var(--skew));
